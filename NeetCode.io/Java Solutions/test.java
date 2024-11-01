@@ -1,7 +1,12 @@
 public class test {
 
-     public int[] test(){
-         return new int[]{0,1};
+     public static void main(String[] args){
+         System.out.println((int)'a');
+
+         String s = "CUM";
+         System.out.println(s);
+         s = s.toLowerCase();
+         System.out.println(s);
      }
 
 }
