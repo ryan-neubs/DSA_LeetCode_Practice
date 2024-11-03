@@ -3,7 +3,7 @@
 from collections import defaultdict
 
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    def groupAnagrams(strs):
         result = defaultdict(list) # Using this so that we don't have to deal with the issue of adding new values. Everything defaults to list
 
         for s in strs:
