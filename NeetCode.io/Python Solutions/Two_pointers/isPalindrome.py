@@ -1,14 +1,8 @@
 def isPalindrome(s):
-    reverse_seq = s[::-1]
-    new_rev_sequence = ""
-    cleaned_sequence = ""
+    clean_s = ""
     
-    for char1, char2 in zip(s, reverse_seq):
+    for char in s:
+        if char.isalnum():
+            new_s += char.lower()
 
-        if char1.isalpha() or char1.isnumeric():
-            cleaned_sequence += char1.lower()
-
-        if char2.isalpha() or char2.isnumeric():
-            new_rev_sequence += char2.lower()
-
-    return new_rev_sequence == cleaned_sequence
+    return new_s == new_s[::-1]
