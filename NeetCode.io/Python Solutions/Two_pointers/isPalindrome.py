@@ -3,6 +3,6 @@ def isPalindrome(s):
     
     for char in s:
         if char.isalnum():
-            new_s += char.lower()
+            clean_s += char.lower()
 
-    return new_s == new_s[::-1]
+    return clean_s == clean_s[::-1]
